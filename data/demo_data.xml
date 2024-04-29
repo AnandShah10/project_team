@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="demo_team_member_1" model="project.team.member">
+        <field name="name">Anand</field>
+        <field name="mobile">1234343434</field>
+        <field name="user_id">2</field>
+        <field name="active">1</field>
+        <field name="gender">male</field>
+        <field name="dob">1992-08-09</field>
+        <field name="country">104</field>
+        <field name="state">588</field>
+        <field name="city">1</field>
+        <field name="house_no">A-7</field>
+        <field name="addr1">Lakshmi Colony</field>
+        <field name="addr2">Near Avkarhall,Ghodasar</field>
+        <field name="zip">380050</field>
+    </record>
+
+    <record id="demo_team_member_2" model="project.team.member">
+        <field name="name">Heet</field>
+        <field name="mobile">1234342434</field>
+        <field name="user_id">3</field>
+        <field name="active">1</field>
+        <field name="gender">male</field>
+        <field name="dob">1992-08-09</field>
+        <field name="country">104</field>
+        <field name="state">588</field>
+        <field name="city">1</field>
+        <field name="house_no">A-7</field>
+        <field name="addr1">Lakshmi Colony</field>
+        <field name="addr2">Near Avkarhall,Ghodasar</field>
+        <field name="zip">380050</field>
+
+    </record>
+
+
+</odoo>

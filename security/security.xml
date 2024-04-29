@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<record id="rule_task_access_for_user" model="ir.rule">
+        <field name="name">See only His/Her Records</field>
+        <field name="model_id" ref="model_project_task"/>
+        <field name="domain_force">[('user_ids.user_id','in',[user.id])]</field>
+        <field name="groups" eval="[(4,ref('base.group_user'))]"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="perm_read" eval="1"/>
+    </record>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="view_add_member_wizard_form" model="ir.ui.view">
+        <field name="name">add.member.wizard.form</field>
+        <field name="model">add.member.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Add Member">
+
+                <group>
+                    <field name="name" options="{'no_create_edit': True}"/>
+                </group>
+                <footer>
+                    <button name="action_add_member" confirm="Do You Really Want To Add Member TO Your Team?"
+                            string="Add"
+                            type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="x"/>
+                </footer>
+
+            </form>
+        </field>
+    </record>
+
+    <record id='action_add_member' model="ir.actions.act_window">
+        <field name="name">Add Member</field>
+        <field name="res_model">add.member.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_add_member_wizard_form"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

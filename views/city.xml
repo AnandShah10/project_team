@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_res_state_city_form" model="ir.ui.view">
+        <field name="name">res.state.city.form</field>
+        <field name="model">res.state.city</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="country"/>
+                            <field name="state" domain="[('country_id', '=', country)]"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_res_state_city_tree" model="ir.ui.view">
+        <field name="name">res.state.city.tree</field>
+        <field name="model">res.state.city</field>
+        <field name="arch" type="xml">
+            <tree multi_edit="1">
+                <field name="name"/>
+                <field name="country"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+    <record id="project_team_city_action" model="ir.actions.act_window">
+        <field name="name">city</field>
+        <field name="res_model">res.state.city</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_city_state"
+              name="Cities"
+              parent="menu_project_team_root"
+              sequence="30"
+              action="project_team_city_action"
+    />
+</odoo>

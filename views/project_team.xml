@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--Team Member Form View-->
+    <record id="view_project_team_member_form" model="ir.ui.view">
+        <field name="name">project.team.member.form</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <widget name="web_ribbon" title="Removed" bg_color="text-bg-danger" invisible="active"/>
+
+                    <group>
+                        <div style="text-align:left">
+                            <h1>
+                                <field name="name" help="Enter your name here."
+                                       placeholder="ENTER YOUR NAME"
+                                       nolabel="1"/>
+                            </h1>
+                            <br/>
+                            <field name="gender" required="1" placeholder='Choose Your Gender:'/>
+                        </div>
+
+                        <div style="text-align:right;">
+                            <field name="user_image" widget="image" class="oe_avatar"
+                                   style="height:10px,width:10px"
+                                   nolabel="1"/>
+                        </div>
+                        <separator/>
+                        <group>
+                            <field name="user_id" string="User Id" widget="many2one_avatar_user"/>
+                            <field name="dob"/>
+                            <field name="active" invisible="1"/>
+                            <field name="address" widget="CopyClipboardChar"/>
+                            <field name="bio_data" string="Bio Data"/>
+                        </group>
+                        <notebook>
+                            <page string="Contact Info">
+                                <group>
+                                    <group string="Address">
+                                        <field name="house_no" string="House No." nolabel="0"/>
+                                        <field name="addr1" string="Street1" nolabel="0"/>
+                                        <field name="addr2" string="street2" nolabel="0"/>
+                                        <field name="city" string="City" nolabel="0"/>
+                                        <field name="zip" string="Zip Code:" nolabel="0"/>
+                                        <field name="state" string="State" nolabel="0"/>
+                                        <field name="country" string="Country" nolabel="0"/>
+                                    </group>
+                                    <group string="Contact">
+                                        <field name="mobile" widget="phone"/>
+                                        <field name="email" widget="email"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Time Sheet">
+                                <field name="timesheet" widget="one2many_list"/>
+                            </page>
+                            <page string="Description">
+                                <field name="description" widget="html" placeholder="Type '/' for commands"/>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" options="{'post_refresh': 'recipients'}"
+                           widget="mail_thread"/>
+                </div>
+
+            </form>
+        </field>
+    </record>
+
+    <!--  Team Member Kanban view-->
+    <record id="view_project_team_member_kanban" model="ir.ui.view">
+        <field name="name">project.team.member.kanban</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <template>
+                    <widget name="web_ribbon" title="Removed" bg_color="text-bg-danger" invisible="active"/>
+                    <t t-name="kanban-box">
+                        <field name="user_image" widget="image" nolabel="1"/>
+
+                        <div>
+                            <div class="oe_kanban_global_click">
+                                <strong>
+                                    <field name="user_id" string="User ID"/>
+                                </strong>
+                            </div>
+                            <div>
+                                <span>
+                                    <field name="name"/>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <field name="active"/>
+                                </span>
+                            </div>
+                            <div>Gender:
+                                <span>
+                                    <field name="gender"/>
+                                </span>
+                            </div>
+                        </div>
+                    </t>
+                </template>
+
+            </kanban>
+        </field>
+    </record>
+
+    <!--Team Member Tree View-->
+    <record id="view_project_team_member_tree" model="ir.ui.view">
+        <field name="name">project.team.member.tree</field>
+        <field name="model">project.team.member</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="user_image" widget="image" invisible="1"/>
+                <field name="user_id"/>
+                <field name="dob"/>
+                <field name="active" invisible="1"/>
+                <!--                <field name="timesheet"/>-->
+                <field name="address" widget="CopyClipboardChar"/>
+                <field name="bio_data"/>
+                <field name="house_no" string="House No." nolabel="0"/>
+                <field name="addr1" string="Street1" nolabel="0"/>
+                <field name="addr2" string="street2" nolabel="0"/>
+                <field name="city" string="City" nolabel="0"/>
+                <field name="zip" string="Zip Code:" nolabel="0"/>
+                <field name="state" string="State" nolabel="0"/>
+                <field name="country" string="Country" nolabel="0"/>
+                <field name="mobile" widget="phone"/>
+                <field name="email" widget="email"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_view_project_team_member" model="ir.actions.act_window">
+        <field name="name">Project Team Member</field>
+        <field name="res_model">project.team.member</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <!-- Team member Record-->
+    <record id="action_open_team_members" model="ir.actions.act_window">
+        <field name="name">Members</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">project.team.member</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--Team Form View-->
+    <record id="view_project_team_form" model="ir.ui.view">
+        <field name="name">project.team.form</field>
+        <field name="model">project.team</field>
+        <field name="arch" type="xml">
+            <form>
+                <button name="%(action_add_member)d" id="button_add_member"
+                        type="action" string="Add Member"/>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="open_team_members" type="object"
+                                class="oe_stat_button" icon="fa-calendar">
+                            <div class="o_stat_info">
+                                <span class="o_stat_text">Members
+                                </span>
+                                <field name="team_members" widget="statinfo" nolabel="1" class="o_stat_value"/>
+                            </div>
+                        </button>
+
+                    </div>
+                    <widget name="web_ribbon" title='Dismantled' bg_color="text-bg-danger"
+                            invisible="active"/>
+                    <group>
+                        <div style="text-align:left">
+                            <h1>
+                                <field name="name" help="Enter team name here."
+                                       placeholder="ENTER TEAM NAME"
+                                       nolabel="1"/>
+                            </h1>
+                            <br/>
+                            <field name="sequence"/>
+                        </div>
+
+                        <separator/>
+                        <group>
+                            <field name="team_leader" string="Team Leader"/>
+                            <!--                            <field name="team_members" widget="many2many_tags"/>-->
+                            <field name="active" invisible="1"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Team Members" name="members">
+                            <field name="team_members" mode="kanban" class="w-100">
+                                <kanban>
+                                    <field name="id"/>
+                                    <field name="name"/>
+                                    <field name="gender"/>
+                                    <field name="user_image"/>
+                                    <field name="dob"/>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div class="oe_kanban_card oe_kanban_global_click">
+                                                <div class="o_kanban_card_content d-flex">
+                                                    <div>
+                                                        <img t-att-src="kanban_image('project.team.member', 'user_image', record.id.raw_value)"
+                                                             class="o_kanban_image o_image_64_cover" alt="Avatar"/>
+                                                    </div>
+                                                    <div class="oe_kanban_details d-flex flex-column ms-3">
+                                                        <strong class="o_kanban_record_title oe_partner_heading">
+                                                            <field name="name"/>
+                                                        </strong>
+                                                        <div class="d-flex align-items-baseline text-break">
+                                                            <i class="fa fa-calender me-1" role="img"
+                                                               aria-label="DateOfBirth" title="Date of Birth"/>
+                                                            <field name="dob"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" options="{'post_refresh': 'recipients'}"
+                           widget="mail_thread"/>
+                </div>
+
+            </form>
+        </field>
+    </record>
+
+    <!--  Team Kanban view-->
+    <record id="view_project_team_kanban" model="ir.ui.view">
+        <field name="name">project.team.kanban</field>
+        <field name="model">project.team</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <template>
+                    <widget name="web_ribbon" title="Dismantled" bg_color="text-bg-danger" invisible="active"/>
+                    <t t-name="kanban-box">
+                        <div>
+                            <div class="oe_kanban_global_click">
+                                <strong>Team Name:
+                                    <field name="name" string="Name"/>
+                                </strong>
+                            </div>
+                            <div>
+                                <span>ID:
+                                    <field name="sequence"/>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <field name="active" invisible="1"/>
+                                </span>
+                            </div>
+                            <div>Team Leader:
+                                <span>
+                                    <field name="team_leader"/>
+                                </span>
+                            </div>
+                            <div>Team Members:
+                                <span>
+                                    <field name="team_members" widget="many2many_tags"/>
+                                </span>
+                            </div>
+                        </div>
+                    </t>
+                </template>
+
+            </kanban>
+        </field>
+    </record>
+
+    <!--Team Tree View-->
+    <record id="view_project_team_tree" model="ir.ui.view">
+        <field name="name">project.team.tree</field>
+        <field name="model">project.team</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="team_leader"/>
+                <field name="team_members" widget="many2many_tags"/>
+                <field name="sequence"/>
+                <field name="active" invisible="1"/>
+            </tree>
+        </field>
+    </record>
+
+    <!--   Project Team Activity View-->
+    <record id="view_project_team_activity" model="ir.ui.view">
+        <field name="name">project.team.activity</field>
+        <field name="model">project.team</field>
+        <field name="arch" type="xml">
+            <activity string="Teams">
+                <templates>
+                    <div t-name="activity-box">
+                        <div>
+                            <field name="name"/>
+                            <field name="team_leader"/>
+                            <field name="team_members"/>
+                            <field name="sequence"/>
+                        </div>
+                    </div>
+                </templates>
+            </activity>
+        </field>
+    </record>
+
+    <record id="view_account_analytic_line_inherit" model="ir.ui.view">
+        <field name="name">account.analytic.line.inherit</field>
+        <field name="model">account.analytic.line</field>
+        <field name="inherit_id" ref="hr_timesheet.hr_timesheet_line_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='employee_id']" position="after">
+                <field name="member_ids" string="Member"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_project_task_inherit2" model="ir.ui.view">
+        <field name="name">project.task.inherit2</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="hr_timesheet.view_task_form2_inherited"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page[@name='page_timesheets']//field[@name='timesheet_ids']//tree//field[@name='employee_id']"
+                   position="after">
+                <field name="member_ids" string="Member"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_project_task_inherit" model="ir.ui.view">
+        <field name="name">project.task.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='date_deadline_and_recurring_task']" position="after">
+                <label for="assigned_date" invisible="stage_id == 3"/>
+                <div id="date_assigned_and_recurring_task" class="d-inline-flex w-100">
+                    <field name="assigned_date" nolabel="1" invisible="stage_id == 3"
+                           decoration-danger="assigned_date &lt; current_date"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_project_project_inherit" model="ir.ui.view">
+        <field name="name">project.project.inherit</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="team_id"/>
+            </xpath>
+            <xpath expr="//page[@name='description']" position="after">
+                <page string="Teams" name="teams">
+                    <field name="team_ids" mode="kanban" class="w-100">
+                        <kanban>
+                            <templates>
+                                <t t-name="kanban-box">
+                                </t>
+                            </templates>
+                        </kanban>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="view_search_task_inherit" model="ir.ui.view">
+        <field name="name">project.search.task.inherit</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_search_form_base"/>
+        <field name="arch" type="xml">
+            <xpath expr="//filter[@name='followed_by_me']" position="after">
+                <filter string="New_tasks" name="working_hours_open" domain="[('working_hours_open', '&lt;', 5)]"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="action_view_project_team" model="ir.actions.act_window">
+        <field name="name">Project Team</field>
+        <field name="res_model">project.team</field>
+        <field name="view_mode">kanban,tree,activity,form</field>
+    </record>
+
+    <record id="action_view_project_team_add" model="ir.actions.act_window">
+        <field name="name">Project Team</field>
+        <field name="res_model">project.team</field>
+        <field name="view_mode">form</field>
+    </record>
+
+    <record id="action_add_member_wizard" model="ir.actions.server">
+        <field name="name">Add Member Wizard</field>
+        <field name="model_id" ref="model_project_team"/>
+        <field name="state">code</field>
+        <field name="code">action=model.add_member_wizard_action()</field>
+    </record>
+
+    <record id="action_give_priority" model="ir.actions.server">
+        <field name="name">Give Priority</field>
+        <field name="model_id" ref="model_project_task"/>
+        <field name="state">code</field>
+        <field name="code">action=model.give_priority()</field>
+    </record>
+
+    <menuitem id="menu_project_team"
+              name="Project Team"
+              parent="menu_project_team_root"
+              sequence="25"
+              action="action_view_project_team"
+    />
+
+    <menuitem id="menu_configure"
+              name="Configuration"
+              parent="menu_project_team_root"
+              sequence="50"
+              groups="project.group_project_manager,base.user_admin"
+    />
+
+    <menuitem id="menu_project_team_add"
+              name="Project Team"
+              parent="menu_configure"
+              sequence="25"
+              action="action_view_project_team_add"
+    />
+
+</odoo>

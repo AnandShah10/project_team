@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_project_team_root"
+              name="Project"
+              sequence="90"
+    />
+    <menuitem id="menu_project_team_member"
+              name="Project Team Member"
+              parent="menu_project_team_root"
+              sequence="15"
+              action="action_view_project_team_member"
+    />
+
+</odoo>

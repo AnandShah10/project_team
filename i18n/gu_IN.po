@@ -1,0 +1,655 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-22 09:52+0000\n"
+"PO-Revision-Date: 2024-03-22 09:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+msgid ""
+"<span class=\"o_stat_text\">Members\n"
+"                                </span>"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_needaction
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__active
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__active
+msgid "Active"
+msgstr "સક્રિય"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_exception_decoration
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_state
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_type_icon
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_add_member_wizard_form
+msgid "Add"
+msgstr ""
+
+#. module: project_team
+#: model:ir.actions.act_window,name:project_team.action_add_member
+#: model_terms:ir.ui.view,arch_db:project_team.view_add_member_wizard_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+msgid "Add Member"
+msgstr ""
+
+#. module: project_team
+#: model:ir.actions.server,name:project_team.action_add_member_wizard
+msgid "Add Member Wizard"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__addr1
+msgid "Addr1"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__addr2
+msgid "Addr2"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Address"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__address
+msgid "Address:"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model,name:project_team.model_account_analytic_line
+msgid "Analytic Line"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_task__assigned_date
+msgid "Assigned Date"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_attachment_count
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__bio_data
+msgid "Bio Data:"
+msgstr ""
+
+#. module: project_team
+#. odoo-python
+#: code:addons/project_team/models/project_team.py:0
+#, python-format
+msgid "Can not delete the record!"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_add_member_wizard_form
+msgid "Cancel"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Choose Your Gender:"
+msgstr "તમારું લિંગ પસંદ કરો:"
+
+#. module: project_team
+#: model:ir.ui.menu,name:project_team.menu_city_state
+msgid "Cities"
+msgstr "શહેરો"
+
+#. module: project_team
+#: model:ir.model,name:project_team.model_res_state_city
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__city
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "City"
+msgstr "શહેર"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__name
+msgid "City Name"
+msgstr ""
+
+#. module: project_team
+#: model:ir.ui.menu,name:project_team.menu_configure
+msgid "Configuration"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Contact"
+msgstr "સંપર્ક કરો"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Contact Info"
+msgstr "સંપર્ક માહિતી"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__country
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__country
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "Country"
+msgstr "દેશ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__create_uid
+#: model:ir.model.fields,field_description:project_team.field_project_team__create_uid
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__create_uid
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__create_date
+#: model:ir.model.fields,field_description:project_team.field_project_team__create_date
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__create_date
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__dob
+msgid "Date Of Birth:"
+msgstr "જન્મ તારીખ:"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "Dismantled"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__display_name
+#: model:ir.model.fields,field_description:project_team.field_project_team__display_name
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__display_name
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_add_member_wizard_form
+msgid "Do You Really Want To Add Member TO Your Team?"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+msgid "ENTER TEAM NAME"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "ENTER YOUR NAME"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__email
+msgid "Email Address:"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+msgid "Enter team name here."
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Enter your name here."
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields.selection,name:project_team.selection__project_team_member__gender__female
+msgid "Female"
+msgstr "સ્ત્રી"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_follower_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_partner_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__activity_type_icon
+#: model:ir.model.fields,help:project_team.field_project_team_member__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__gender
+msgid "Gender"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_kanban
+msgid "Gender:"
+msgstr "લિંગ:"
+
+#. module: project_team
+#: model:ir.actions.server,name:project_team.action_give_priority
+msgid "Give Priority"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__has_message
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__house_no
+msgid "House No"
+msgstr "ઘર નં"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "House No."
+msgstr "ઘર નં."
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__id
+#: model:ir.model.fields,field_description:project_team.field_project_team__id
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__id
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__id
+msgid "ID"
+msgstr "આઈડી"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "ID:"
+msgstr "આઈડી:"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_exception_icon
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__activity_exception_icon
+#: model:ir.model.fields,help:project_team.field_project_team_member__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__message_needaction
+#: model:ir.model.fields,help:project_team.field_project_team_member__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__message_has_error
+#: model:ir.model.fields,help:project_team.field_project_team__message_has_sms_error
+#: model:ir.model.fields,help:project_team.field_project_team_member__message_has_error
+#: model:ir.model.fields,help:project_team.field_project_team_member__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__user_image
+msgid "Image"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_is_follower
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__write_uid
+#: model:ir.model.fields,field_description:project_team.field_project_team__write_uid
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__write_uid
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__write_date
+#: model:ir.model.fields,field_description:project_team.field_project_team__write_date
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__write_date
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields.selection,name:project_team.selection__project_team_member__gender__male
+msgid "Male"
+msgstr "પુરુષ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_account_analytic_line__member_ids
+#: model:ir.model.fields,field_description:project_team.field_add_member_wizard__name
+msgid "Member"
+msgstr "સભ્ય"
+
+#. module: project_team
+#: model:ir.actions.act_window,name:project_team.action_open_team_members
+msgid "Members"
+msgstr "સભ્યો"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_has_error
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__mobile
+msgid "Mobile No:"
+msgstr "મોબાઈલ નમ્બર:"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__my_activity_date_deadline
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__name
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "Name"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__name
+msgid "Name:"
+msgstr ""
+
+#. module: project_team
+#. odoo-python
+#: code:addons/project_team/models/project_team.py:0
+#: code:addons/project_team/models/project_team.py:0
+#: code:addons/project_team/models/project_team.py:0
+#: code:addons/project_team/models/project_team.py:0
+#, python-format
+msgid "New"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_search_task_inherit
+msgid "New_tasks"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_calendar_event_id
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_date_deadline
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_summary
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_type_id
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_needaction_counter
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_has_error_counter
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__message_needaction_counter
+#: model:ir.model.fields,help:project_team.field_project_team_member__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__message_has_error_counter
+#: model:ir.model.fields,help:project_team.field_project_team_member__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields.selection,name:project_team.selection__project_team_member__gender__others
+msgid "Others"
+msgstr "અન્ય"
+
+#. module: project_team
+#: model:ir.ui.menu,name:project_team.menu_project_team_root
+msgid "Project"
+msgstr ""
+
+#. module: project_team
+#: model:ir.actions.act_window,name:project_team.action_view_project_team
+#: model:ir.actions.act_window,name:project_team.action_view_project_team_add
+#: model:ir.model,name:project_team.model_project_team
+#: model:ir.ui.menu,name:project_team.menu_project_team
+#: model:ir.ui.menu,name:project_team.menu_project_team_add
+msgid "Project Team"
+msgstr ""
+
+#. module: project_team
+#: model:ir.actions.act_window,name:project_team.action_view_project_team_member
+#: model:ir.model,name:project_team.model_project_team_member
+#: model:ir.ui.menu,name:project_team.menu_project_team_member
+msgid "Project Team Member"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__rating_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__rating_ids
+msgid "Ratings"
+msgstr "રેટિંગ્સ"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_kanban
+msgid "Removed"
+msgstr "દૂર કરેલું"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__activity_user_id
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__activity_user_id
+msgid "Responsible User"
+msgstr "જવાબદાર વપરાશકર્તા"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__message_has_sms_error
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "એસએમએસ વિતરણ ભૂલ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__sequence
+msgid "Sequence ID"
+msgstr "ક્રમ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__state
+#: model:ir.model.fields,field_description:project_team.field_res_state_city__state
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "State"
+msgstr "રાજ્ય"
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__activity_state
+#: model:ir.model.fields,help:project_team.field_project_team_member__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "Street1"
+msgstr "શેરી1"
+
+#. module: project_team
+#: model:ir.model,name:project_team.model_project_task
+msgid "Task"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__team_leader
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_form
+msgid "Team Leader"
+msgstr "ટીમ નેતા"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "Team Leader:"
+msgstr "ટીમ નેતા:"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__team_members
+msgid "Team Members"
+msgstr "ટુકડી સભ્યો"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "Team Members:"
+msgstr "ટુકડી સભ્યો:"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_kanban
+msgid "Team Name:"
+msgstr ""
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_activity
+msgid "Teams"
+msgstr ""
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__timesheet
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "Time Sheet"
+msgstr "સમય પત્રક"
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__activity_exception_decoration
+#: model:ir.model.fields,help:project_team.field_project_team_member__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "રેકોર્ડ પર અપવાદ પ્રવૃત્તિનો પ્રકાર."
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_kanban
+msgid "User ID"
+msgstr "વપરાશકર્તા ઓળખ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__user_id
+msgid "User ID:"
+msgstr "વપરાશકર્તા ઓળખ:"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+msgid "User Id"
+msgstr "વપરાશકર્તા ઓળખ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team__website_message_ids
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__website_message_ids
+msgid "Website Messages"
+msgstr "વેબસાઇટ સંદેશાઓ"
+
+#. module: project_team
+#: model:ir.model.fields,help:project_team.field_project_team__website_message_ids
+#: model:ir.model.fields,help:project_team.field_project_team_member__website_message_ids
+msgid "Website communication history"
+msgstr "વેબસાઇટ સંચાર ઇતિહાસ"
+
+#. module: project_team
+#: model:ir.model,name:project_team.model_add_member_wizard
+msgid "Wizard to add member to teams"
+msgstr "ટીમમાં સભ્ય ઉમેરવા માટે વિઝાર્ડ"
+
+#. module: project_team
+#: model:ir.model.fields,field_description:project_team.field_project_team_member__zip
+msgid "Zip"
+msgstr "પિન કોડ"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "Zip Code:"
+msgstr "પિન કોડ:"
+
+#. module: project_team
+#: model:ir.actions.act_window,name:project_team.project_team_city_action
+msgid "city"
+msgstr "શહેર"
+
+#. module: project_team
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_form
+#: model_terms:ir.ui.view,arch_db:project_team.view_project_team_member_tree
+msgid "street2"
+msgstr "શેરી2"
